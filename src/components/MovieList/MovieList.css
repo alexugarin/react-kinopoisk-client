@@ -1,0 +1,29 @@
+.container {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto 0 auto;
+  }
+  
+  .header {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .control-page {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin-left:40px;
+  }
+  
+  .error {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+  }

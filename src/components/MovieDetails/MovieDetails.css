@@ -1,0 +1,59 @@
+.loader {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 30px;
+    animation: l1 1s linear infinite alternate;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .loader:before {
+    content: "Loading..."
+  }
+  
+  @keyframes l1 {
+    to {
+      opacity: 0
+    }
+  }
+
+  .movie-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 60px;
+  }
+  
+  .movie-poster {
+    width: 400px; /* Фиксированная ширина для постера */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .movie-details {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .movie-details h3, .movie-details p {
+    margin: 0;
+  }
+  
+  .movie-details h3 {
+    width:20%
+  }
+
+  .movie-details p {
+    text-align:justify
+  }
+
+  .movie-genres {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .movie-genres li {
+    display: inline-block;
+    margin-right: 10px;
+  }
