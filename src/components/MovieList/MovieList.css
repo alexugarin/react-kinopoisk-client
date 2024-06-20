@@ -5,12 +5,12 @@
     gap: 15px;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto 0 auto;
+    margin: 20px auto 0 auto;
   }
   
   .header {
     display: flex;
-    gap: 30px;
+    gap: 40px;
   }
   
   .control-page {
@@ -26,4 +26,14 @@
     font-size: 30px;
     display: flex;
     justify-content: center;
+  }
+
+  .toFavorites_btn{
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
   }

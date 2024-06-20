@@ -4,6 +4,8 @@ import { Movie, FilterParams } from "../../service/types/types";
 import Filter from "../Filter/Filter";
 import MovieCard from "../MovieCard/MovieCard";
 import "./MovieList.css";
+import { useNavigate } from "react-router-dom";
+
 
 const MovieList: React.FC = () => {
   const [movies, setMovies] = useState<Movie[]>([]);
@@ -50,11 +52,22 @@ const MovieList: React.FC = () => {
   const goToPreviousPage = () =>
     setCurrentPage((page) => Math.max(page - 1, 1));
 
+  const navigate = useNavigate();
+  // Функция для перехода к избранным фильмам
+  const navigateToFavorites = () => {
+    navigate(`/favorites`);
+  };
+
   return (
     <div>
-      {/* Фильтр */}
-      <Filter filters={filters} updateFilters={updateFilters} />
-      {error && <p>{error}</p>}
+      <div className="header">
+        {/* Фильтр */}
+        <Filter filters={filters} updateFilters={updateFilters} />
+        {error && <p>{error}</p>}
+        <div onClick={navigateToFavorites} className="toFavorites_btn">
+        Перейти к Избранным
+      </div>
+      </div>
 
       {/* Кнопки пагинации */}
       <div className="control-page">

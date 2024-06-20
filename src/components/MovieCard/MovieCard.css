@@ -11,8 +11,9 @@ img {
     height: 300px;
 }
 
-.card div {
+.card div{
     padding-left: 20px;
+    padding-bottom: 10px;
 }
 
 h3 {
